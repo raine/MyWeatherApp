@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MyWindowController.h
 //  MyWeatherApp
 //
 //  Created by Raine Virta on 5.11.2013.
@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface MyWindowController : NSWindowController
 
 @end

@@ -10,14 +10,13 @@
 		F710E702182940B700CCF52C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F710E701182940B700CCF52C /* Cocoa.framework */; };
 		F710E70C182940B700CCF52C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F710E70A182940B700CCF52C /* InfoPlist.strings */; };
 		F710E70E182940B700CCF52C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E70D182940B700CCF52C /* main.m */; };
-		F710E712182940B700CCF52C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F710E710182940B700CCF52C /* Credits.rtf */; };
 		F710E715182940B700CCF52C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E714182940B700CCF52C /* AppDelegate.m */; };
 		F710E718182940B700CCF52C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F710E716182940B700CCF52C /* MainMenu.xib */; };
 		F710E71A182940B700CCF52C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F710E719182940B700CCF52C /* Images.xcassets */; };
 		F710E721182940B700CCF52C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F710E720182940B700CCF52C /* XCTest.framework */; };
 		F710E722182940B700CCF52C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F710E701182940B700CCF52C /* Cocoa.framework */; };
-		F710E72A182940B700CCF52C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F710E728182940B700CCF52C /* InfoPlist.strings */; };
-		F710E72C182940B700CCF52C /* MyWeatherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E72B182940B700CCF52C /* MyWeatherAppTests.m */; };
+		F710E7381829411800CCF52C /* MyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E7361829411800CCF52C /* MyWindowController.m */; };
+		F710E7391829411800CCF52C /* MyWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F710E7371829411800CCF52C /* MyWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,16 +39,15 @@
 		F710E70B182940B700CCF52C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F710E70D182940B700CCF52C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F710E70F182940B700CCF52C /* MyWeatherApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyWeatherApp-Prefix.pch"; sourceTree = "<group>"; };
-		F710E711182940B700CCF52C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		F710E713182940B700CCF52C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F710E714182940B700CCF52C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F710E717182940B700CCF52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F710E719182940B700CCF52C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F710E71F182940B700CCF52C /* MyWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F710E720182940B700CCF52C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F710E727182940B700CCF52C /* MyWeatherAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyWeatherAppTests-Info.plist"; sourceTree = "<group>"; };
-		F710E729182940B700CCF52C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F710E72B182940B700CCF52C /* MyWeatherAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWeatherAppTests.m; sourceTree = "<group>"; };
+		F710E7351829411800CCF52C /* MyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWindowController.h; sourceTree = "<group>"; };
+		F710E7361829411800CCF52C /* MyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWindowController.m; sourceTree = "<group>"; };
+		F710E7371829411800CCF52C /* MyWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				F710E707182940B700CCF52C /* MyWeatherApp */,
-				F710E725182940B700CCF52C /* MyWeatherAppTests */,
 				F710E700182940B700CCF52C /* Frameworks */,
 				F710E6FF182940B700CCF52C /* Products */,
 			);
@@ -115,10 +112,8 @@
 		F710E707182940B700CCF52C /* MyWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				F710E713182940B700CCF52C /* AppDelegate.h */,
-				F710E714182940B700CCF52C /* AppDelegate.m */,
-				F710E716182940B700CCF52C /* MainMenu.xib */,
-				F710E719182940B700CCF52C /* Images.xcassets */,
+				F710E73B1829417700CCF52C /* Sources */,
+				F710E73A1829415D00CCF52C /* Resources */,
 				F710E708182940B700CCF52C /* Supporting Files */,
 			);
 			path = MyWeatherApp;
@@ -128,30 +123,32 @@
 			isa = PBXGroup;
 			children = (
 				F710E709182940B700CCF52C /* MyWeatherApp-Info.plist */,
-				F710E70A182940B700CCF52C /* InfoPlist.strings */,
 				F710E70D182940B700CCF52C /* main.m */,
 				F710E70F182940B700CCF52C /* MyWeatherApp-Prefix.pch */,
-				F710E710182940B700CCF52C /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F710E725182940B700CCF52C /* MyWeatherAppTests */ = {
+		F710E73A1829415D00CCF52C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F710E72B182940B700CCF52C /* MyWeatherAppTests.m */,
-				F710E726182940B700CCF52C /* Supporting Files */,
+				F710E70A182940B700CCF52C /* InfoPlist.strings */,
+				F710E7371829411800CCF52C /* MyWindowController.xib */,
+				F710E716182940B700CCF52C /* MainMenu.xib */,
+				F710E719182940B700CCF52C /* Images.xcassets */,
 			);
-			path = MyWeatherAppTests;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		F710E726182940B700CCF52C /* Supporting Files */ = {
+		F710E73B1829417700CCF52C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F710E727182940B700CCF52C /* MyWeatherAppTests-Info.plist */,
-				F710E728182940B700CCF52C /* InfoPlist.strings */,
+				F710E713182940B700CCF52C /* AppDelegate.h */,
+				F710E7351829411800CCF52C /* MyWindowController.h */,
+				F710E7361829411800CCF52C /* MyWindowController.m */,
+				F710E714182940B700CCF52C /* AppDelegate.m */,
 			);
-			name = "Supporting Files";
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +229,7 @@
 			files = (
 				F710E70C182940B700CCF52C /* InfoPlist.strings in Resources */,
 				F710E71A182940B700CCF52C /* Images.xcassets in Resources */,
-				F710E712182940B700CCF52C /* Credits.rtf in Resources */,
+				F710E7391829411800CCF52C /* MyWindowController.xib in Resources */,
 				F710E718182940B700CCF52C /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F710E72A182940B700CCF52C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +250,7 @@
 			files = (
 				F710E715182940B700CCF52C /* AppDelegate.m in Sources */,
 				F710E70E182940B700CCF52C /* main.m in Sources */,
+				F710E7381829411800CCF52C /* MyWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F710E72C182940B700CCF52C /* MyWeatherAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,28 +280,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		F710E710182940B700CCF52C /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F710E711182940B700CCF52C /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
 		F710E716182940B700CCF52C /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F710E717182940B700CCF52C /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		F710E728182940B700CCF52C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F710E729182940B700CCF52C /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
