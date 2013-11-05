@@ -7,12 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "MyWindowController.h"
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    MyWindowController *myWindowController;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    myWindowController = [[MyWindowController alloc] init];
+    [[myWindowController window] makeKeyAndOrderFront:myWindowController];
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    return YES;
 }
 
 @end

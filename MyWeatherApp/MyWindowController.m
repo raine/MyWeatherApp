@@ -14,6 +14,11 @@
 
 @implementation MyWindowController
 
+- (id)init
+{
+    return [super initWithWindowNibName:@"MyWindowController" owner:self];
+}
+
 - (id)initWithWindow:(NSWindow *)window
 {
     self = [super initWithWindow:window];
