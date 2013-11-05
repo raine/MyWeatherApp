@@ -17,6 +17,8 @@
 		F710E722182940B700CCF52C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F710E701182940B700CCF52C /* Cocoa.framework */; };
 		F710E7381829411800CCF52C /* MyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E7361829411800CCF52C /* MyWindowController.m */; };
 		F710E7391829411800CCF52C /* MyWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F710E7371829411800CCF52C /* MyWindowController.xib */; };
+		F710E74118294DC300CCF52C /* WeatherLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E74018294DC300CCF52C /* WeatherLocation.m */; };
+		F710E7441829547300CCF52C /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E7431829547300CCF52C /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		F710E7351829411800CCF52C /* MyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWindowController.h; sourceTree = "<group>"; };
 		F710E7361829411800CCF52C /* MyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWindowController.m; sourceTree = "<group>"; };
 		F710E7371829411800CCF52C /* MyWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWindowController.xib; sourceTree = "<group>"; };
+		F710E73F18294DC300CCF52C /* WeatherLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherLocation.h; sourceTree = "<group>"; };
+		F710E74018294DC300CCF52C /* WeatherLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherLocation.m; sourceTree = "<group>"; };
+		F710E7421829547300CCF52C /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		F710E7431829547300CCF52C /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +150,13 @@
 			isa = PBXGroup;
 			children = (
 				F710E713182940B700CCF52C /* AppDelegate.h */,
+				F710E714182940B700CCF52C /* AppDelegate.m */,
 				F710E7351829411800CCF52C /* MyWindowController.h */,
 				F710E7361829411800CCF52C /* MyWindowController.m */,
-				F710E714182940B700CCF52C /* AppDelegate.m */,
+				F710E73F18294DC300CCF52C /* WeatherLocation.h */,
+				F710E74018294DC300CCF52C /* WeatherLocation.m */,
+				F710E7421829547300CCF52C /* TableViewController.h */,
+				F710E7431829547300CCF52C /* TableViewController.m */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -249,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F710E715182940B700CCF52C /* AppDelegate.m in Sources */,
+				F710E74118294DC300CCF52C /* WeatherLocation.m in Sources */,
 				F710E70E182940B700CCF52C /* main.m in Sources */,
+				F710E7441829547300CCF52C /* TableViewController.m in Sources */,
 				F710E7381829411800CCF52C /* MyWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

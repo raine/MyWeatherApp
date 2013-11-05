@@ -7,8 +7,11 @@
 //
 
 #import "MyWindowController.h"
+#import "TableViewController.h"
 
 @interface MyWindowController ()
+
+@property (strong) IBOutlet TableViewController *tableViewController;
 
 @end
 
@@ -31,6 +34,7 @@
 - (void)windowDidLoad
 {
     [super windowDidLoad];
+    NSLog(@"%@", _tableViewController);
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
