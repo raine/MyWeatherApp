@@ -35,7 +35,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn width="197.06640625" minWidth="40" maxWidth="1000" id="MqQ-Ib-WpQ">
+                                        <tableColumn identifier="name" width="197.06640625" minWidth="40" maxWidth="1000" id="MqQ-Ib-WpQ">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Location">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -48,7 +48,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn width="92" minWidth="40" maxWidth="1000" id="tk4-XP-lnJ">
+                                        <tableColumn identifier="temperature" width="92" minWidth="40" maxWidth="1000" id="tk4-XP-lnJ">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Temperature">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>

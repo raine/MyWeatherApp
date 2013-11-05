@@ -10,4 +10,7 @@
 
 @interface WeatherLocation : NSObject
 
+@property (nonatomic, strong) NSString* name;
+@property (nonatomic) float temperature;
+
 @end

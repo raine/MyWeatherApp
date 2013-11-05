@@ -10,5 +10,14 @@
 
 @implementation WeatherLocation
 
+- (id)init {
+    if (self = [super init]) {
+        _name = @"Helsinki";
+        _temperature = 32.5;
+    }
+
+    return self;
+}
+
 
 @end

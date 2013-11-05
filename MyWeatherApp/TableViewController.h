@@ -9,6 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface TableViewController : NSObject <NSTableViewDataSource>
-@property (weak) IBOutlet NSTableView *tableView;
 
 @end
