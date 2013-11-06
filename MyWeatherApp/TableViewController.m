@@ -61,7 +61,9 @@
 
 - (IBAction)remove:(id)sender
 {
-    NSLog(@"%@", @"remove");
+    NSInteger row = [tableView selectedRow];
+    [list removeObjectAtIndex:row];
+    [tableView reloadData];
 }
 
 @end
