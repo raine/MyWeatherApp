@@ -35,7 +35,9 @@
     return [list count];
 }
 
-- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)aRow
+- (id)tableView:(NSTableView *)aTableView
+objectValueForTableColumn:(NSTableColumn *)aTableColumn
+            row:(NSInteger)aRow
 {
     id result = nil;
 
@@ -50,6 +52,19 @@
     }
 
     return result;
+}
+
+- (void)tableView:(NSTableView *)aTableView
+   setObjectValue:(id)anObject
+   forTableColumn:(NSTableColumn *)aTableColumn
+              row:(NSInteger)aRow
+{
+    // Identifier should always be name, but just to make it clear
+    NSString *identifier = [aTableColumn identifier];
+    if ([identifier isEqualToString:@"name"]) {
+        NSObject *object = [list objectAtIndex:aRow];
+        [object setValue:anObject forKey:identifier];
+    }
 }
 
 - (IBAction)add:(id)sender
