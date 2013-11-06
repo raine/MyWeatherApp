@@ -54,7 +54,9 @@
 
 - (IBAction)add:(id)sender
 {
-    NSLog(@"%@", @"add");
+    WeatherLocation *wLoc = [[WeatherLocation alloc] initWithLocation:@"Kuopio"];
+    [list addObject:wLoc];
+    [tableView reloadData];
 }
 
 - (IBAction)remove:(id)sender

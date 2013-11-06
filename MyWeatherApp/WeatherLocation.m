@@ -10,10 +10,18 @@
 
 @implementation WeatherLocation
 
+- (id)initWithLocation:(NSString *)location {
+    if (self = [self init]) {
+        _name = location;
+    }
+
+    return self;
+}
+
 - (id)init {
     if (self = [super init]) {
         _name = @"Helsinki";
-        _temperature = 32.0;
+        _temperature = 12.4;
     }
 
     return self;

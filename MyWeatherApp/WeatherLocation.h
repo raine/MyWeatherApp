@@ -13,4 +13,6 @@
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic) float temperature;
 
+- (id)initWithLocation:(NSString *)location;
+
 @end
