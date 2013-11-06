@@ -37,8 +37,19 @@
 
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)aRow
 {
+    id result = nil;
+
     NSObject *object = [list objectAtIndex:aRow];
-    return [object valueForKey:[aTableColumn identifier]];
+    NSString *identifier = [aTableColumn identifier];
+    id value = [object valueForKey:identifier];
+
+    if ([identifier isEqualToString:@"temperature"]) {
+        result = [NSString stringWithFormat:@"%@°C", value];
+    } else {
+        result = value;
+    }
+
+    return result;
 }
 
 - (IBAction)add:(id)sender

@@ -13,7 +13,7 @@
 - (id)init {
     if (self = [super init]) {
         _name = @"Helsinki";
-        _temperature = 32.5;
+        _temperature = 32.0;
     }
 
     return self;
