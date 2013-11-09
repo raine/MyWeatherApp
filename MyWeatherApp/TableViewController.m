@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "WeatherLocation.h"
+#import "Weather.h"
 
 @interface TableViewController () {
     IBOutlet NSTableView *tableView;
@@ -22,16 +23,28 @@
     if (self = [super init]) {
         list = [[NSMutableArray alloc] init];
         [self addLocation];
+
+        Weather *weather = [[Weather alloc] init];
+        //        [weather getWeatherWithDelegate:self location:@"Helsinki"];
+        [weather getWeatherWithLocation:@"Helsinki" success:^(id JSON) {
+            NSDictionary *jsonDict = (NSDictionary *) JSON;
+        } failure:^(NSError *error, id response) {
+            // Do something eventually
+        }];
     }
 
     return self;
 }
 
+- (void)weather:(Weather *)weather finishedWithResults:(NSDictionary *)results
+{
+    NSLog(@"got weather results %@", results);
+}
+
 - (void)addLocation
 {
-    WeatherLocation *wLoc = [[WeatherLocation alloc] initWithLocation:@"Kuopio"];
-    NSLog(@"%@", wLoc.name);
-    [list addObject:wLoc];
+    WeatherLocation *weatherLocation = [[WeatherLocation alloc] initWithLocation:@"Kuopio"];
+    [list addObject:weatherLocation];
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
@@ -39,9 +52,7 @@
     return [list count];
 }
 
-- (id)tableView:(NSTableView *)aTableView
-objectValueForTableColumn:(NSTableColumn *)aTableColumn
-            row:(NSInteger)aRow
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)aRow
 {
     id result = nil;
 
@@ -63,7 +74,7 @@ objectValueForTableColumn:(NSTableColumn *)aTableColumn
    forTableColumn:(NSTableColumn *)aTableColumn
               row:(NSInteger)aRow
 {
-    // Identifier should always be name, but just to make it clear
+    // Identifier should always be the name, but just to make it clear
     NSString *identifier = [aTableColumn identifier];
     if ([identifier isEqualToString:@"name"]) {
         NSObject *object = [list objectAtIndex:aRow];
