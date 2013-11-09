@@ -1,0 +1,14 @@
+# guard 'shell' do
+#   watch(/.*/) {|m| `echo "foo"` }
+#   watch(/(.*).js/) {|m| `node #{m[0]}` }
+#   # watch(/(.*).js/) {|m| `curl http://localhost:3000/weather` }
+# end
+#
+
+
+guard :shell do
+  watch /(.*).js/ do |m|
+    sleep 1
+    `curl http://localhost:3000/weather`
+  end
+end
