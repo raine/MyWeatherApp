@@ -21,13 +21,17 @@
 {
     if (self = [super init]) {
         list = [[NSMutableArray alloc] init];
-
-        WeatherLocation *myWeatherLocation = [[WeatherLocation alloc] init];
-        [list addObject:myWeatherLocation];
-        NSLog(@"%@", @"test");
+        [self addLocation];
     }
 
     return self;
+}
+
+- (void)addLocation
+{
+    WeatherLocation *wLoc = [[WeatherLocation alloc] initWithLocation:@"Kuopio"];
+    NSLog(@"%@", wLoc.name);
+    [list addObject:wLoc];
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
@@ -69,8 +73,7 @@ objectValueForTableColumn:(NSTableColumn *)aTableColumn
 
 - (IBAction)add:(id)sender
 {
-    WeatherLocation *wLoc = [[WeatherLocation alloc] initWithLocation:@"Kuopio"];
-    [list addObject:wLoc];
+    [self addLocation];
     [tableView reloadData];
 }
 
