@@ -27,7 +27,7 @@
 
 - (void)getWeatherWithLocation:(NSString *)location success:(void (^)(id JSON))success failure:(void (^)(NSError *error, id response))failure
 {
-    NSString *urlString = @"/weather";
+    NSString *urlString = @"weather";
     NSDictionary *params = @{@"q": location};
 
     [[WeatherAPIClient sharedClient] GET:urlString parameters:(NSDictionary *)params success:^(NSURLSessionDataTask *task, id JSON) {
