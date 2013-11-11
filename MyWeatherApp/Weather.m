@@ -34,6 +34,8 @@
         success(JSON);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
+        NSLog(@"%@", error);
+        NSLog(@"%@", response);
         failure(error, response);
     }];
 }
