@@ -55,13 +55,13 @@
     return result;
 }
 
-- (void)tableView:(NSTableView *)aTableView setObjectValue:(id)anObject forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)aRow
+- (void)tableView:(NSTableView *)aTableView setObjectValue:(id)anObject forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
 {
-    // Identifier should always be the name, but just to make it clear
+    // Name is the only editable field so only `name` should ever be the identifier
     NSString *identifier = [aTableColumn identifier];
     if ([identifier isEqualToString:@"name"]) {
-        NSObject *object = [locationController.locations objectAtIndex:aRow];
-        [object setValue:anObject forKey:identifier];
+        WeatherLocation *location = [locationController.locations objectAtIndex:rowIndex];
+        [location setValue:anObject forKey:identifier];
     }
 }
 
