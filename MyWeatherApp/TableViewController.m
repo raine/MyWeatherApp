@@ -62,6 +62,7 @@
     if ([identifier isEqualToString:@"name"]) {
         WeatherLocation *location = [locationController.locations objectAtIndex:rowIndex];
         [location setValue:anObject forKey:identifier];
+        [locationController updateLocation:location];
     }
 }
 

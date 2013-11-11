@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSMutableArray* locations;
 
 - (WeatherLocation *)addLocationWithName:(NSString *)name;
+- (void)updateLocation:(WeatherLocation *)location;
 
 @end
