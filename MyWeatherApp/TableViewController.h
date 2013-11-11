@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "WeatherDelegate.h"
 
-@interface TableViewController : NSObject <NSTableViewDataSource, WeatherDelegate>
+@interface TableViewController : NSObject <NSTableViewDataSource> // , WeatherDelegate>
 
 @end

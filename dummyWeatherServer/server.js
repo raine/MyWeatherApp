@@ -20,7 +20,8 @@ app.get('/weather', function(req, res) {
 
 	console.log(params);
 
-	resObj.main.temp = randomFromInterval(253.15, 293.15)
+	resObj.main.temp = randomFromInterval(253.15, 293.15);
+	// resObj.main.temp = 253.15;
 	resObj.name = query;
 
 	res.json(resObj);

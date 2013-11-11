@@ -14,24 +14,14 @@
 		F710E715182940B700CCF52C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E714182940B700CCF52C /* AppDelegate.m */; };
 		F710E718182940B700CCF52C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F710E716182940B700CCF52C /* MainMenu.xib */; };
 		F710E71A182940B700CCF52C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F710E719182940B700CCF52C /* Images.xcassets */; };
-		F710E722182940B700CCF52C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F710E701182940B700CCF52C /* Cocoa.framework */; };
 		F710E7381829411800CCF52C /* MyWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E7361829411800CCF52C /* MyWindowController.m */; };
 		F710E7391829411800CCF52C /* MyWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F710E7371829411800CCF52C /* MyWindowController.xib */; };
 		F710E74118294DC300CCF52C /* WeatherLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E74018294DC300CCF52C /* WeatherLocation.m */; };
 		F710E7441829547300CCF52C /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F710E7431829547300CCF52C /* TableViewController.m */; };
 		F7B17EC8182E7243001EEB5F /* WeatherAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B17EC7182E7243001EEB5F /* WeatherAPIClient.m */; };
 		F7DDBBC3182EB04B006974B0 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DDBBC2182EB04A006974B0 /* Weather.m */; };
+		F7DDBBC8182EE6E9006974B0 /* WeatherLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DDBBC7182EE6E9006974B0 /* WeatherLocationController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F710E723182940B700CCF52C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F710E6F6182940B700CCF52C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F710E6FD182940B700CCF52C;
-			remoteInfo = MyWeatherApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6249110410A4427C9D8388B8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -49,7 +39,6 @@
 		F710E714182940B700CCF52C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F710E717182940B700CCF52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F710E719182940B700CCF52C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F710E71F182940B700CCF52C /* MyWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F710E7351829411800CCF52C /* MyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWindowController.h; sourceTree = "<group>"; };
 		F710E7361829411800CCF52C /* MyWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWindowController.m; sourceTree = "<group>"; };
 		F710E7371829411800CCF52C /* MyWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWindowController.xib; sourceTree = "<group>"; };
@@ -62,6 +51,8 @@
 		F7DDBBC1182EB04A006974B0 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		F7DDBBC2182EB04A006974B0 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		F7DDBBC4182EB9B2006974B0 /* WeatherDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDelegate.h; sourceTree = "<group>"; };
+		F7DDBBC6182EE6E9006974B0 /* WeatherLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherLocationController.h; sourceTree = "<group>"; };
+		F7DDBBC7182EE6E9006974B0 /* WeatherLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherLocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,14 +62,6 @@
 			files = (
 				F710E702182940B700CCF52C /* Cocoa.framework in Frameworks */,
 				ED0515FD54FF439288C8C0B3 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F710E71C182940B700CCF52C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F710E722182940B700CCF52C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				F710E6FE182940B700CCF52C /* MyWeatherApp.app */,
-				F710E71F182940B700CCF52C /* MyWeatherAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				F710E70A182940B700CCF52C /* InfoPlist.strings */,
-				F710E7371829411800CCF52C /* MyWindowController.xib */,
 				F710E716182940B700CCF52C /* MainMenu.xib */,
 				F710E719182940B700CCF52C /* Images.xcassets */,
 			);
@@ -158,21 +139,32 @@
 		F710E73B1829417700CCF52C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F7B17EC6182E7243001EEB5F /* WeatherAPIClient.h */,
-				F7B17EC7182E7243001EEB5F /* WeatherAPIClient.m */,
-				F7DDBBC4182EB9B2006974B0 /* WeatherDelegate.h */,
-				F7DDBBC1182EB04A006974B0 /* Weather.h */,
-				F7DDBBC2182EB04A006974B0 /* Weather.m */,
+				F7DDBBC5182EE3EE006974B0 /* WeatherAPI */,
 				F710E73F18294DC300CCF52C /* WeatherLocation.h */,
 				F710E74018294DC300CCF52C /* WeatherLocation.m */,
+				F7DDBBC6182EE6E9006974B0 /* WeatherLocationController.h */,
+				F7DDBBC7182EE6E9006974B0 /* WeatherLocationController.m */,
 				F710E713182940B700CCF52C /* AppDelegate.h */,
 				F710E714182940B700CCF52C /* AppDelegate.m */,
+				F710E7371829411800CCF52C /* MyWindowController.xib */,
 				F710E7351829411800CCF52C /* MyWindowController.h */,
 				F710E7361829411800CCF52C /* MyWindowController.m */,
 				F710E7421829547300CCF52C /* TableViewController.h */,
 				F710E7431829547300CCF52C /* TableViewController.m */,
 			);
 			name = Sources;
+			sourceTree = "<group>";
+		};
+		F7DDBBC5182EE3EE006974B0 /* WeatherAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F7B17EC6182E7243001EEB5F /* WeatherAPIClient.h */,
+				F7B17EC7182E7243001EEB5F /* WeatherAPIClient.m */,
+				F7DDBBC4182EB9B2006974B0 /* WeatherDelegate.h */,
+				F7DDBBC1182EB04A006974B0 /* Weather.h */,
+				F7DDBBC2182EB04A006974B0 /* Weather.m */,
+			);
+			name = WeatherAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,24 +189,6 @@
 			productReference = F710E6FE182940B700CCF52C /* MyWeatherApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F710E71E182940B700CCF52C /* MyWeatherAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F710E732182940B700CCF52C /* Build configuration list for PBXNativeTarget "MyWeatherAppTests" */;
-			buildPhases = (
-				F710E71B182940B700CCF52C /* Sources */,
-				F710E71C182940B700CCF52C /* Frameworks */,
-				F710E71D182940B700CCF52C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F710E724182940B700CCF52C /* PBXTargetDependency */,
-			);
-			name = MyWeatherAppTests;
-			productName = MyWeatherAppTests;
-			productReference = F710E71F182940B700CCF52C /* MyWeatherAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,11 +197,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Raine Virta";
-				TargetAttributes = {
-					F710E71E182940B700CCF52C = {
-						TestTargetID = F710E6FD182940B700CCF52C;
-					};
-				};
 			};
 			buildConfigurationList = F710E6F9182940B700CCF52C /* Build configuration list for PBXProject "MyWeatherApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -243,7 +212,6 @@
 			projectRoot = "";
 			targets = (
 				F710E6FD182940B700CCF52C /* MyWeatherApp */,
-				F710E71E182940B700CCF52C /* MyWeatherAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,13 +225,6 @@
 				F710E71A182940B700CCF52C /* Images.xcassets in Resources */,
 				F710E7391829411800CCF52C /* MyWindowController.xib in Resources */,
 				F710E718182940B700CCF52C /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F710E71D182940B700CCF52C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +271,7 @@
 				F710E715182940B700CCF52C /* AppDelegate.m in Sources */,
 				F710E74118294DC300CCF52C /* WeatherLocation.m in Sources */,
 				F7DDBBC3182EB04B006974B0 /* Weather.m in Sources */,
+				F7DDBBC8182EE6E9006974B0 /* WeatherLocationController.m in Sources */,
 				F710E70E182940B700CCF52C /* main.m in Sources */,
 				F710E7441829547300CCF52C /* TableViewController.m in Sources */,
 				F7B17EC8182E7243001EEB5F /* WeatherAPIClient.m in Sources */,
@@ -317,22 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F710E71B182940B700CCF52C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F710E724182940B700CCF52C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F710E6FD182940B700CCF52C /* MyWeatherApp */;
-			targetProxy = F710E723182940B700CCF52C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F710E70A182940B700CCF52C /* InfoPlist.strings */ = {
@@ -450,46 +397,6 @@
 			};
 			name = Release;
 		};
-		F710E733182940B700CCF52C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyWeatherApp.app/Contents/MacOS/MyWeatherApp";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyWeatherApp/MyWeatherApp-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "MyWeatherAppTests/MyWeatherAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		F710E734182940B700CCF52C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyWeatherApp.app/Contents/MacOS/MyWeatherApp";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyWeatherApp/MyWeatherApp-Prefix.pch";
-				INFOPLIST_FILE = "MyWeatherAppTests/MyWeatherAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,15 +414,6 @@
 			buildConfigurations = (
 				F710E730182940B700CCF52C /* Debug */,
 				F710E731182940B700CCF52C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F710E732182940B700CCF52C /* Build configuration list for PBXNativeTarget "MyWeatherAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F710E733182940B700CCF52C /* Debug */,
-				F710E734182940B700CCF52C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

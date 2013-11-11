@@ -25,9 +25,7 @@
     }];
 }
 
-- (void)getWeatherWithLocation:(NSString *)location
-                       success:(void (^)(id JSON))success
-                       failure:(void (^)(NSError *error, id response))failure
+- (void)getWeatherWithLocation:(NSString *)location success:(void (^)(id JSON))success failure:(void (^)(NSError *error, id response))failure
 {
     NSString *urlString = @"/weather";
     NSDictionary *params = @{@"q": location};
