@@ -40,8 +40,9 @@
 {
     __block WeatherLocation *loc = location;
     [_weather getWeatherWithLocation:location.name success:^(id JSON) {
-        NSNumber *temp = [JSON valueForKeyPath:@"main.temp"];
-        NSString *name = [JSON valueForKeyPath:@"name"];
+        NSNumber *temp    = [JSON valueForKeyPath:@"main.temp"];
+        NSString *name    = [JSON valueForKeyPath:@"name"];
+        NSString *country = [JSON valueForKeyPath:@"sys.country"];
 
         if (name) {
             loc.name = name;
@@ -49,6 +50,10 @@
 
         if (temp) {
             [loc setKelvin:[temp doubleValue]];
+        }
+
+        if (country) {
+            loc.country = country;
         }
     } failure:^(NSError *error, id response) {
         // Do something eventually

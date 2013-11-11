@@ -37,19 +37,24 @@
 {
     id result = nil;
 
-    NSObject *object = [locationController.locations objectAtIndex:aRow];
+    WeatherLocation *location = [locationController.locations objectAtIndex:aRow];
     NSString *identifier = [aTableColumn identifier];
 
     if ([identifier isEqualToString:@"celsius"]) {
-        NSNumber *temp = [object valueForKey:@"celsius"];
+        NSNumber *temp = [location valueForKey:@"celsius"];
         NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
         formatter.roundingIncrement = [NSNumber numberWithDouble:0.1];
         formatter.numberStyle = NSNumberFormatterDecimalStyle;
         NSString *formattedTemp = [formatter stringFromNumber:temp];
 
         result = [NSString stringWithFormat:@"%@°C", formattedTemp];
-    } else {
-        result = [object valueForKey:identifier];
+    } else if ([identifier isEqualToString:@"name"]) {
+        result = location.name;
+
+        if (location.country) {
+            NSString *countryByAppending = [NSString stringWithFormat:@", %@", location.country];
+            result = [result stringByAppendingString:countryByAppending];
+        }
     }
 
     return result;

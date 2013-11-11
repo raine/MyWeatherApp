@@ -11,6 +11,7 @@
 @interface WeatherLocation : NSObject
 
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *country;
 @property double celsius;
 @property double fahrenheit;
 @property double kelvin;
